@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia_Game</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+</head>
+<body>
+    
+        <h1>Trivia Game</h1>
+
+        <p>This is a trivia game which has 5 questions. You have 60 seconds to answer all the questions.</p>
+        <p>The game ends when the time runs out.</p>
+        <p>Click Start to start the game</p>
+
+        <button id="start">Start</button>
+        <div id="timeRemain">Time Remain: 60s</div>
+        
+
+        <div>
+            <h3>1. Toronto is the capital of Ontario</h3>
+            <ul>
+                <input type="radio" name="q1" value="true" id="q1t"> <span id="q1ta">True</span> <br>
+                <input type="radio" name="q1" value="false" id="q1f"><span id="q1fa">False</span> 
+            </ul>
+
+            <h3>2. The sky is blue because it reflects the color of ocean</h3>
+            <ul>
+                <input type="radio" name="q2" value="true" id="q2t"><span id="q2ta">True</span><br>
+                <input type="radio" name="q2" value="false" id="q2f"><span id="q2fa">False</span> 
+            </ul>
+
+            <h3>3. 4 forgs have 16 legs</h3>
+            <ul>
+                <input type="radio" name="q3" value="true" id="q3t"><span id="q3ta">True</span> <br>
+                <input type="radio" name="q3" value="false" id="q3f"><span id="q3fa">False</span>
+            </ul>
+
+            <h3>4. 2*2+3=10</h3>
+            <ul>
+                <input type="radio" name="q4" value="true" id="q4t"><span id="q4ta">True</span><br>
+                <input type="radio" name="q4" value="false" id="q4f"><span id="q4fa">False</span>
+            </ul>
+
+            <h3>5. "Bohemian Rhapsody" is by Queen </h3>
+            <ul>
+                <input type="radio" name="q5" value="true" id="q5t"><span id="q5ta">True</span><br>
+                <input type="radio" name="q5" value="false" id="q5f"><span id="q5fa">False</span>
+            </ul>    
+        </div>
+
+        <button id="submit">Submit</button>
+        <button id="reset">Play Again</button>
+
+        <script src="assets/app.js"></script>
+        <script src="assets/answer.js"></script>
+    
+</body>
+</html>
